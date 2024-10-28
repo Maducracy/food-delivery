@@ -354,4 +354,49 @@ span{
 ::-webkit-scrollbar-thumb{
 background-color: blue;
 }
+.hamburger{
+ display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger span{
+  width: 25px;
+  height: 3px;
+  background-color:black;
+  margin: 4px;
+}
 
+
+@media (max-width:760px){
+.nav-link{
+  /* display: none;
+  flex-direction: column; */
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: transparent;
+
+  
+       
+
+}
+.nav-link .open{
+  display: flex;
+}
+  .nav-link li{
+    margin: 10px 0;
+    text-align: center;
+  }
+  .hamburger{
+    display: flex;
+  }
+  .nav-link a{
+    margin: 10px 0;
+    text-align: center;
+  }
+  .hamburger{ display: flex;
+  }
+
+  
+}

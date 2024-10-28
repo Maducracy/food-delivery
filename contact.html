@@ -18,7 +18,7 @@
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="4" required></textarea>
   
-          <button type="submit" class="submit-button">Send Message</button>
+          <button type="submit" class="submit-button" onclick="submit()">Send Message</button>
         </form>
       </div>
     </section>
@@ -66,5 +66,13 @@
   background-color: #ff8f00;
 }
     </style>
+    <script>
+      const submitbutton = document.querySelector(".submit-button");
+      submitbutton.addEventListener("click", function(e){
+       e.preventdefault()
+       
+      });
+
+    </script>
 </body>
 </html>
